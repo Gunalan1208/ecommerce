@@ -1,0 +1,83 @@
+/* Container for the whole section */
+.Popular {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading for the section */
+.Popular h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    
+}
+
+/* Line separator below the heading */
+.Popular hr {
+    width: 50px;
+    height: 3px;
+    background-color: #f05a28;
+    border: none;
+    margin: 0 auto 30px;
+
+}
+
+/* Grid container for the items */
+.popular-item {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    gap: 20px;
+
+}
+
+/* Style for individual item (assuming Item component is card-like) */
+.popular-item .item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+
+/* Item hover effect */
+.popular-item .item:hover {
+    transform: translateY(-5px);
+}
+
+/* Image styling */
+.popular-item .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Item name */
+.popular-item .item h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* New price styling */
+.popular-item .item .new-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f05a28;
+    margin-right: 10px;
+    text-decoration: line-through;
+
+}
+
+/* Old price styling */
+.popular-item .item .old-price {
+    font-size: 1rem;
+    text-decoration: line-through; /* This strikes out the old price */
+    color: #888; /* Sets the color of the old price */
+    margin-left: 10px; /* Optional: Add spacing if needed */
+}

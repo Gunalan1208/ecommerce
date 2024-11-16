@@ -1,75 +1,24 @@
-/* NewCollections.css */
-
-.new-collections {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+.new-collections{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    height:90vh;
 }
-
-.new-collections h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+.new-collections h1{
+    color:#171717;
+    font-size:50px;
+    font-weight:600;
 }
-
-.new-collections hr {
-    width: 50px;
-    margin: 20px auto;
-    border: 1px solid #333;
+.new-collections hr{
+    width:200px;
+    height:6px;
+    border-radius:10px;
+    background:#252525;
 }
-
-.collections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.collections{
+    display:grid;
+    grid-template-column: 1fr 1fr 1fr 1fr;
+    margin-top:50px;
+    gap:30px;
 }
-
-.collections .item {
-    width: 400px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.collections .item:hover {
-    transform: translateY(-10px);
-}
-
-.collections .item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #eee;
-}
-
-.collections .item .item-details {
-    padding: 10px;
-}
-
-.collections .item .item-details h2 {
-    font-size: 1.25rem;
-    color: #333;
-}
-
-.collections .item .item-details p {
-    margin: 5px 0;
-    font-size: 1rem;
-    color: #666;
-}
-
-.collections .item .item-details .new-price {
-    color: #e63946;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.collections .item .item-details .old-price {
-    text-decoration: line-through;
-    color: #aaa;
-}
-
-

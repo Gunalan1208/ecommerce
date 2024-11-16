@@ -1,65 +1,53 @@
-/* Container for the newsletter section */
-.newsletter {
-    background:pink;
-    padding: 40px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
-    margin: 50px auto;
+.newsletter{
+    width:65%;
+    height:40vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    padding:0px 140px;
+    margin-bottom:150px;
+    background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%)
+    gap:30px;
 }
-
-/* Heading for the newsletter */
-.newsletter h1 {
-    font-size: 2rem;
-    color: #171717;
-    margin-bottom: 15px;
-    font-weight: bold;
+.newsletter h1{
+    color:#454545;
+    font-size:55px;
+    font-weight:600;
 }
-
-/* Paragraph text */
-.newsletter p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 25px;
+.newsletter p{
+    color:#454545;
+    font-size:20px;
 }
-
-/* Input field styling */
-.newsletter input[type="email"] {
-    width: 60%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 40px;
-    outline: none;
-    transition: border-color 0.3s ease;
+.newsletter div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:white;
+    width:730px;
+    height:70px;
+    border-radius:80px;
+    border:1px solid #e3e3e3;
 }
-
-/* Change border color on input focus */
-.newsletter input[type="email"]:focus {
-    border-color: #333;
+.newsletter input{
+    width:500px;
+    margin-left:30px;
+    border:none;
+    outline:none;
+    color:#616161;
+    font-family:Poppins;
+    font-size:16px;
 }
-
-/* Subscribe button styling */
-.newsletter button {
-    width: 40%;
-    padding: 12px;
-    background-color: red;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 120px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.newsletter div button{
+    width:210px;
+    height:70px;
+    border-radius:80px;
+    background:black;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
 }
-
-
-/* Button hover effect */
-.newsletter button:hover {
-    background-color: #d62828;
-}
-
-
-
-
+    
+    
+    

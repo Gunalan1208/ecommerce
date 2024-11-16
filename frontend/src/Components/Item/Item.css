@@ -1,57 +1,26 @@
-/* Main container for each item */
-.item {
-    background-color: #f9f9f9; /* Light background for item cards */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 400px; /* Controls the width of each item */
-    margin: 15px auto;
+.item{
+    width: 350px;
 }
-
-/* Hover effect for item */
-.item:hover {
-    transform: translateY(-5px); /* Lift the item slightly on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+.item p{
+    margin: 6px 0px;
 }
-
-/* Image styling */
-.item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    object-fit: cover;
+.item_prices{
+    display:flex;
+    gap:20px;
 }
-
-/* Name of the item */
-.item p {
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: 500;
-    margin-bottom: 10px;
+.item-price-new{
+    color:#374151;
+    font-size:18x;
+    font-weight:600;
 }
-
-/* Price container */
-.item-prices {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Adds space between new and old prices */
+.item-price-old{
+    color:#8c8c8c;
+    font-size: 18px;
+    font-weight:500;
+    text-decoration: line-through;
 }
-
-/* New price styling */
-.item-prices-new {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #e63946; /* Highlight the new price with a bold color */
+.item:hover{
+    tranform:scale(1.05);
+    transition:0.6s;
 }
-
-/* Old price styling with strike-through */
-.item-prices-old {
-    font-size: 1.2rem;
-    text-decoration: line-through; /* Strikes out the old price */
-    color: #888; /* Muted color for the old price */
-}
-
-
+    
